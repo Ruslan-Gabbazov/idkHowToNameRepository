@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2DelegatesAndEvents", "Task2DelegatesAndEvents.csproj", "{353552BC-79E2-4201-854A-25F5C67E497E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{353552BC-79E2-4201-854A-25F5C67E497E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353552BC-79E2-4201-854A-25F5C67E497E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353552BC-79E2-4201-854A-25F5C67E497E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353552BC-79E2-4201-854A-25F5C67E497E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
