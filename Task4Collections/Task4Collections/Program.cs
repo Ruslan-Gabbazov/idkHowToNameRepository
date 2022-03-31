@@ -15,11 +15,12 @@ foreach (var keys in dictionary)
 {
     Console.Write($"Key = {keys.Key}, Value = List{{");
     foreach (var entity in keys.Value) 
-        Console.Write($"Entity{{Id = {entity.Id}}} ");
+        Console.Write($" Entity{{Id = {entity.Id}}} ");
     
     Console.WriteLine("}");
 }
 
+//
 static Dictionary<int, List<Entity>> MakeDictionary(List<Entity> entitiesList)
 {
     var newDictionary = new Dictionary<int, List<Entity>>();
