@@ -28,7 +28,7 @@ internal class LocalFileLogger<T> : ILogger
     public LocalFileLogger(string filePath)
     {
         FilePath = filePath;
-        File.WriteAllText(filePath, String.Empty);
+        File.WriteAllText(filePath, string.Empty);
     }
 
     public void LogInfo(string message)
@@ -47,52 +47,17 @@ internal class LocalFileLogger<T> : ILogger
     }
 }
 
-internal class Matrix
+public class Matrix
 {
-    private readonly double[,] _matrix;
-    private int Rows { get; }
-    private int Cols { get; }
-
-    public Matrix(int rows, int cols, int initialValue = 0)
-    {
-        Rows = rows;
-        Cols = cols;
-        var matrix = new double[rows, cols];
-
-        for (var i = 0; i < rows; i++)
-            for (var j = 0; j < cols; j++)
-                matrix[i, j] = initialValue;
-
-        _matrix = matrix;
-    }
+    public double[,]? Data;
+    public int Rows;
+    public int Cols;
 }
 
 public class Vector
 {
-    private double X;
-    private double Y;
-    private double Z;
-
-    public Vector(double x = 0.0, double y = 0.0, double z = 0.0)
-    {
-        X = x;
-        Y = y;
-        Z = z;
-    }
-
-    public Vector(double[] xyz)
-    {
-        if (xyz.Length != 3)
-        {
-            string msg = "Vector: cannot make a vector of non-3 numbers";
-            Console.WriteLine(msg);
-            throw new ArgumentException(msg);
-        }
-        else
-        {
-            X = xyz[0];
-            Y = xyz[1];
-            Z = xyz[2];
-        }
-    }
+    public double X;
+    public double Y;
+    public double Z;
+    public double Length;
 }
