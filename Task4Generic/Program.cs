@@ -1,14 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-var filePath = ".\\LogTextFile.txt";
+var filePath = "..\\..\\..\\LogTextFile.txt";
 
 var matrixLogger = new LocalFileLogger<Matrix>(filePath);
+var vectorLogger = new LocalFileLogger<Vector>(filePath);
 
 matrixLogger.LogInfo("LogInfo massage from Matrix class");
 matrixLogger.LogWarning("LogWarning massage from Matrix class");
 matrixLogger.LogError("LogError massage from Matrix class", new ArgumentException());
-
-var vectorLogger = new LocalFileLogger<Vector>(filePath);
 
 vectorLogger.LogInfo("LogInfo massage from Vector class");
 vectorLogger.LogWarning("LogWarning massage from Vector class");

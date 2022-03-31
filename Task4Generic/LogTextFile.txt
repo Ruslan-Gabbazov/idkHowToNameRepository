@@ -1,0 +1,6 @@
+[Info] : [Matrix] : LogInfo massage from Matrix class
+[Warning] : [Matrix] : LogWarning massage from Matrix class
+[Error] : [Matrix] : LogError massage from Matrix class. Value does not fall within the expected range.
+[Info] : [Vector] : LogInfo massage from Vector class
+[Warning] : [Vector] : LogWarning massage from Vector class
+[Error] : [Vector] : LogError massage from Vector class. Value does not fall within the expected range.
