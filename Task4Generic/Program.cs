@@ -5,13 +5,13 @@ var filePath = "..\\..\\..\\LogTextFile.txt";
 var matrixLogger = new LocalFileLogger<Matrix>(filePath);
 var vectorLogger = new LocalFileLogger<Vector>(filePath);
 
-matrixLogger.LogInfo("LogInfo massage from Matrix class");
-matrixLogger.LogWarning("LogWarning massage from Matrix class");
-matrixLogger.LogError("LogError massage from Matrix class", new ArgumentException());
+matrixLogger.LogInfo("LogInfo massage from Matrix type");
+matrixLogger.LogWarning("LogWarning massage from Matrix type");
+matrixLogger.LogError("LogError massage from Matrix type", new ArgumentException());
 
-vectorLogger.LogInfo("LogInfo massage from Vector class");
-vectorLogger.LogWarning("LogWarning massage from Vector class");
-vectorLogger.LogError("LogError massage from Vector class", new ArgumentException());
+vectorLogger.LogInfo("LogInfo massage from Vector type");
+vectorLogger.LogWarning("LogWarning massage from Vector type");
+vectorLogger.LogError("LogError massage from Vector type", new ArgumentException());
 
 internal interface ILogger
 {
