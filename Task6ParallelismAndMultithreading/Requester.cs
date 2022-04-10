@@ -1,3 +1,5 @@
+namespace Task6ParallelismAndMultithreading;
+
 /// <summary>
 /// Предоставляет возможность обработать запрос.
 /// </summary>
