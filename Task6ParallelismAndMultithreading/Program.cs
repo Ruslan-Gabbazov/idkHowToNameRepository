@@ -5,14 +5,13 @@ while (true)
 {
     Console.WriteLine("Введите текст запроса. Для выхода введите /exit");
     var command = Console.ReadLine();
-
+    var message = command;
+    
     if (command == "/exit") 
         break;
 
-    Console.WriteLine($"Будет послано сообщение '{command}'");
+    Console.WriteLine($"Будет послано сообщение '{message}'");
     Console.WriteLine("Введите аргументы сообщения. Если аргументы не нужны - введите /end");
-    
-    var message = command;
     command = Console.ReadLine();
     
     var arguments = new List<string>();
